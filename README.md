@@ -1,23 +1,22 @@
-<img src="/public/cover.jpg" alt="Cover image representing Nim, a personal website template" width="100%" />
+# Austin Konig Portfolio
 
-Nim is a free and open-source personal website template built with Next.js 15, React 19, Tailwind CSS v4, and Motion. Designed for developers, designers, and founders, it combines minimalism with delightful animated components powered by [Motion-Primitives](https://motion-primitives.com).
+Austin Konig's personal portfolio website built with Next.js 15, React 19, Tailwind CSS v4, and Motion-Primitives.
 
-Live demo: [https://nim-fawn.vercel.app](https://nim-fawn.vercel.app)
+Live site: [https://austinkonig.vercel.app](https://austinkonig.vercel.app)
 
 ## Features
 
-- Minimal one-page portfolio layout.
-- Blog support with MDX.
-- Responsive and accessible design.
-- Easy to use
-- [Motion-Primitives](https://motion-primitives.com) for animated components.
+- Minimal one-page portfolio layout
+- Interactive pixelated overlay effects
+- Custom typography with PPMondwest and PPNeueBit fonts
+- Responsive and accessible design
+- Dark/light theme support
+- [Motion-Primitives](https://motion-primitives.com) for animated components
 
 ## Getting Started
 
-For detailed setup instructions, refer to the [Installation Guide](./INSTALLATION.md).
-
 ```bash
-git clone https://github.com/ibelick/nim.git
+git clone https://github.com/austinkonig/ak-portfolio.git
 cd nim
 npm install
 npm run dev

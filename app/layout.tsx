@@ -1,9 +1,10 @@
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
 import { Header } from './header'
 import { Footer } from './footer'
 import { ThemeProvider } from 'next-themes'
+import { InteractivePixelOverlay } from '@/components/ui/interactive-pixel-overlay'
+import { KonamiCode } from '@/components/ui/konami-code'
 
 export const viewport: Viewport = {
   width: 'device-width',
@@ -12,26 +13,16 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://nim-fawn.vercel.app/'),
+  metadataBase: new URL('https://austinkonig.vercel.app/'),
   alternates: {
     canonical: '/'
   },
   title: {
-    default: 'Nim - Personal website template',
-    template: '%s | Nim'
+    default: 'Austin Konig',
+    template: '%s | Austin Konig'
   },
-  description:  'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
+  description:  'Austin Konig - Building at the intersection of engineering, product, and creative direction.',
 };
-
-const geist = Geist({
-  variable: '--font-geist',
-  subsets: ['latin'],
-})
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-})
 
 export default function RootLayout({
   children,
@@ -40,17 +31,24 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+      </head>
       <body
-        className={`${geist.variable} ${geistMono.variable} bg-white tracking-tight antialiased dark:bg-zinc-950`}
+        className="bg-zinc-50 tracking-tight antialiased dark:bg-zinc-900 dot-background"
       >
+        <InteractivePixelOverlay />
+        <KonamiCode />
         <ThemeProvider
           enableSystem={true}
           attribute="class"
           storageKey="theme"
           defaultTheme="system"
         >
-          <div className="flex min-h-screen w-full flex-col font-[family-name:var(--font-inter-tight)]">
-            <div className="relative mx-auto w-full max-w-screen-sm flex-1 px-4 pt-20">
+          <div className="flex min-h-screen w-full flex-col font-['PPMondwest','PPNeueBit',Arial,sans-serif] text-[113%] lg:text-[135%]">
+            <div className="relative mx-auto lg:mx-0 lg:ml-8 w-full max-w-screen-sm flex-1 px-4 pt-20">
               <Header />
               {children}
               <Footer />

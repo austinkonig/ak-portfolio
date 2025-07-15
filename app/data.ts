@@ -2,7 +2,7 @@ type Project = {
   name: string
   description: string
   link: string
-  video: string
+  image: string
   id: string
 }
 
@@ -29,97 +29,83 @@ type SocialLink = {
 
 export const PROJECTS: Project[] = [
   {
-    name: 'Motion Primitives Pro',
+    name: 'Frost Fest 2025',
     description:
-      'Advanced components and templates to craft beautiful websites.',
-    link: 'https://pro.motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/newProfileItem/d898be8a-7037-4c71-af0c-8997239b050d.mp4?_a=DATAdtAAZAA0',
+      'Music Fest at Stanford featuring Doechii, Zack Fox, Ray Vaughn, and Zacari.',
+    link: 'https://stanforddaily.com/2025/04/14/review-doechii-lights-up-frost-amphitheater-at-frost-fest-2025/',
+    image: 'https://cdn-images.dzcdn.net/images/artist/b2ee54b63e3a3485b6aed609fd320521/1900x1900-000000-80-0-0.jpg',
     id: 'project1',
   },
   {
-    name: 'Motion Primitives',
-    description: 'UI kit to make beautiful, animated interfaces.',
-    link: 'https://motion-primitives.com/',
-    video:
-      'https://res.cloudinary.com/read-cv/video/upload/t_v_b/v1/1/profileItems/W2azTw5BVbMXfj7F53G92hMVIn32/XSfIvT7BUWbPRXhrbLed/ee6871c9-8400-49d2-8be9-e32675eabf7e.mp4?_a=DATAdtAAZAA0',
+    name: 'Black Fest 2025',
+    description:
+      'Stanford Black Fest featuring Vince Staples and TiaCorine.',
+    link: 'https://live.stanford.edu/events/25-frost/blackfest/',
+    image: 'https://huxleysneuewelt.de/wp-content/uploads/2024/02/vince11-1200x1568.jpg',
     id: 'project2',
   },
 ]
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
-    company: 'Reglazed Studio',
-    title: 'CEO',
+    company: 'Stanford Concert Network',
+    title: 'Co-Director, Talent Coordinator',
     start: '2024',
     end: 'Present',
-    link: 'https://ibelick.com',
+    link: 'https://scn.stanford.edu',
     id: 'work1',
   },
   {
-    company: 'Freelance',
-    title: 'Design Engineer',
-    start: '2022',
-    end: '2024',
-    link: 'https://ibelick.com',
+    company: 'Stanford University',
+    title: 'CS106A/B Teaching Assistant',
+    start: '2023',
+    end: 'Present',
+    link: 'https://cs106a.stanford.edu',
     id: 'work2',
   },
   {
-    company: 'Freelance',
-    title: 'Front-end Developer',
-    start: '2017',
-    end: 'Present',
-    link: 'https://ibelick.com',
+    company: 'The Openproof Project',
+    title: 'Full Stack Developer Intern',
+    start: '2023',
+    end: '2023',
+    link: 'https://openproof.gradegrinder.net',
     id: 'work3',
   },
 ]
 
 export const BLOG_POSTS: BlogPost[] = [
   {
-    title: 'Exploring the Intersection of Design, AI, and Design Engineering',
-    description: 'How AI is changing the way we design',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+    title: 'Do You Deserve to Be Here? - Anonymous',
+    description: 'A thought-provoking essay on finding belonging.',
+    link: 'https://essays.wtf/meritocracy',
     uid: 'blog-1',
   },
+
   {
-    title: 'Why I left my job to start my own company',
-    description:
-      'A deep dive into my decision to leave my job and start my own company',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
+    title: 'Angel of the Night (1979) - Angela Bofill',
+    description: 'Iconic.',
+    link: 'https://music.apple.com/us/album/angel-of-the-night/282859756',
     uid: 'blog-2',
-  },
-  {
-    title: 'What I learned from my first year of freelancing',
-    description:
-      'A look back at my first year of freelancing and what I learned',
-    link: '/blog/exploring-the-intersection-of-design-ai-and-design-engineering',
-    uid: 'blog-3',
-  },
-  {
-    title: 'How to Export Metadata from MDX for Next.js SEO',
-    description: 'A guide on exporting metadata from MDX files to leverage Next.js SEO features.',
-    link: '/blog/example-mdx-metadata',
-    uid: 'blog-4',
-  },
+  }
 ]
 
 export const SOCIAL_LINKS: SocialLink[] = [
   {
-    label: 'Github',
-    link: 'https://github.com/ibelick',
-  },
-  {
-    label: 'Twitter',
-    link: 'https://twitter.com/ibelick',
+    label: 'GitHub',
+    link: 'https://github.com/austinkonig',
   },
   {
     label: 'LinkedIn',
-    link: 'https://www.linkedin.com/in/ibelick',
+    link: 'https://www.linkedin.com/in/austinkonig',
   },
   {
     label: 'Instagram',
-    link: 'https://www.instagram.com/ibelick',
+    link: 'https://www.instagram.com/akfourtyfive',
+  },
+  {
+    label: 'Resume',
+    link: 'https://drive.google.com/file/d/1qshgDReaiZG0VMNTy1Lz2aV8nkb3QQoZ/view?usp=sharing',
   },
 ]
 
-export const EMAIL = 'your@email.com'
+export const EMAIL = 'akonig45@stanford.edu'
