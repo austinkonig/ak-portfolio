@@ -72,7 +72,7 @@ export function Footer() {
       <div className="flex items-center justify-between">
         <a href="https://github.com/austinkonig/ak-portfolio" target="_blank">
           <TextLoop className="text-xs text-zinc-500">
-            <span>© 2024 AK.</span>
+            {[<span key="copyright">© 2024 AK.</span>]}
           </TextLoop>
         </a>
         {/* <div className="text-xs text-zinc-400">
