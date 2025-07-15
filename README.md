@@ -1,6 +1,8 @@
 # Austin Konig Portfolio
 
-Austin Konig's personal portfolio website built with Next.js 15, React 19, Tailwind CSS v4, and Motion-Primitives.
+My personal portfolio website built with Next.js 15, React 19, Tailwind CSS v4, and Motion-Primitives.
+
+Built from Nim by Julien Thibeaut
 
 Live site: [https://austinkonig.vercel.app](https://austinkonig.vercel.app)
 
