@@ -41,7 +41,7 @@ export const PROJECTS: Project[] = [
     description:
       'Stanford Black Fest featuring Vince Staples and TiaCorine.',
     link: 'https://live.stanford.edu/events/25-frost/blackfest/',
-    image: 'https://huxleysneuewelt.de/wp-content/uploads/2024/02/vince11-1200x1568.jpg',
+    image: 'https://images.squarespace-cdn.com/content/v1/58519102725e25cc99d17697/3da4953e-9b95-47ab-acd5-5c116eb44dcd/Screenshot+2022-04-20+at+09.33.07.png',
     id: 'project2',
   },
 ]
