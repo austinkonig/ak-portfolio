@@ -42,10 +42,10 @@ export default function RootLayout({
         <InteractivePixelOverlay />
         <KonamiCode />
         <ThemeProvider
-          enableSystem={true}
+          enableSystem={false}
           attribute="class"
           storageKey="theme"
-          defaultTheme="system"
+          defaultTheme="dark"
         >
           <div className="flex min-h-screen w-full flex-col font-['PPMondwest','PPNeueBit',Arial,sans-serif] text-[113%] lg:text-[135%]">
             <div className="relative mx-auto lg:mx-0 lg:ml-8 w-full max-w-screen-sm flex-1 px-4 pt-20">
