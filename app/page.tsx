@@ -3,6 +3,7 @@ import { motion } from 'motion/react'
 import { XIcon } from 'lucide-react'
 import { Spotlight } from '@/components/ui/spotlight'
 import { Magnetic } from '@/components/ui/magnetic'
+import { SkywalkIcon } from '@/components/ui/skywalk-icon'
 import {
   MorphingDialog,
   MorphingDialogTrigger,
@@ -19,6 +20,7 @@ import {
   EMAIL,
   SOCIAL_LINKS,
 } from './data'
+import { useState } from 'react'
 
 const VARIANTS_CONTAINER = {
   hidden: { opacity: 0 },
@@ -120,6 +122,8 @@ function MagneticSocialLink({
 }
 
 export default function Personal() {
+  const [hoveredJobId, setHoveredJobId] = useState<string | null>(null)
+
   return (
     <motion.main
       className="space-y-10"
@@ -185,6 +189,8 @@ export default function Personal() {
               target="_blank"
               rel="noopener noreferrer"
               key={job.id}
+              onMouseEnter={() => setHoveredJobId(job.id)}
+              onMouseLeave={() => setHoveredJobId(null)}
             >
               <Spotlight
                 className="from-zinc-900 via-zinc-800 to-zinc-700 blur-2xl dark:from-zinc-100 dark:via-zinc-200 dark:to-zinc-50"
@@ -200,9 +206,23 @@ export default function Personal() {
                       {job.company}
                     </p>
                   </div>
-                  <p className="text-zinc-600 dark:text-zinc-400">
-                    {job.start} - {job.end}
-                  </p>
+                  <div className="flex items-center gap-3">
+                    <p className="text-zinc-600 dark:text-zinc-400">
+                      {job.start} - {job.end}
+                    </p>
+                    {/* Skywalk Icon - only show when hovering over Skywalk job */}
+                    {job.company === 'Skywalk' && hoveredJobId === job.id && (
+                      <motion.div
+                        initial={{ opacity: 0, scale: 0.8 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.8 }}
+                        transition={{ duration: 0.2 }}
+                        className="flex-shrink-0"
+                      >
+                        <SkywalkIcon className="h-5 w-5 text-zinc-700 dark:text-zinc-300" />
+                      </motion.div>
+                    )}
+                  </div>
                 </div>
               </div>
             </a>

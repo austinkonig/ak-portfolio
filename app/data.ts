@@ -48,12 +48,20 @@ export const PROJECTS: Project[] = [
 
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
+    company: 'Skywalk',
+    title: 'Data Science Intern',
+    start: '2025',
+    end: 'Present',
+    link: 'https://skywalk.ai',
+    id: 'work1',
+  },
+  {
     company: 'Stanford Concert Network',
     title: 'Co-Director, Talent Coordinator',
     start: '2024',
     end: 'Present',
     link: 'https://scn.stanford.edu',
-    id: 'work1',
+    id: 'work2',
   },
   {
     company: 'Stanford University',
@@ -61,7 +69,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     start: '2023',
     end: 'Present',
     link: 'https://cs106a.stanford.edu',
-    id: 'work2',
+    id: 'work3',
   },
   {
     company: 'The Openproof Project',
@@ -69,7 +77,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     start: '2023',
     end: '2023',
     link: 'https://openproof.gradegrinder.net',
-    id: 'work3',
+    id: 'work4',
   },
 ]
 
