@@ -33,7 +33,7 @@ body {
 .load-veil-text {
   font-family: "Times New Roman", Times, serif;
   font-weight: 400;
-  font-size: clamp(1.25rem, 3.2vw, 1.75rem);
+  font-size: clamp(1.75rem, 4.4vw, 2.5rem);
   color: #000;
 }
 
@@ -67,7 +67,7 @@ body {
   padding: 2.25rem 1rem 1rem;
   font-family: "Times New Roman", Times, serif;
   font-weight: 400;
-  font-size: clamp(1.25rem, 3.2vw, 1.75rem);
+  font-size: clamp(1.75rem, 4.4vw, 2.5rem);
   color: #fff;
   text-align: center;
   user-select: none;
@@ -83,7 +83,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 0.9rem;
-  width: min(92vw, 480px);
+  width: min(94vw, 580px);
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -102,14 +102,14 @@ body {
 }
 
 .exp-role {
-  font-size: clamp(0.85rem, 1.1rem + 0.4vw, 1rem);
+  font-size: clamp(1.15rem, 1.35rem + 0.55vw, 1.45rem);
   color: #fff;
   mix-blend-mode: difference;
 }
 
 .exp-org {
   display: block;
-  font-size: clamp(0.75rem, 0.9rem + 0.3vw, 0.875rem);
+  font-size: clamp(1rem, 1.15rem + 0.4vw, 1.2rem);
   color: #fff;
   margin-top: 0.15rem;
   mix-blend-mode: difference;
@@ -124,7 +124,7 @@ body {
 }
 
 .exp-dates {
-  font-size: clamp(0.75rem, 0.9rem + 0.3vw, 0.875rem);
+  font-size: clamp(1rem, 1.15rem + 0.4vw, 1.2rem);
   color: #fff;
   white-space: nowrap;
   mix-blend-mode: difference;
@@ -132,8 +132,8 @@ body {
 
 .corner-icon {
   position: absolute;
-  width: 30px;
-  height: 30px;
+  width: 44px;
+  height: 44px;
   color: #333;
   border: none;
   outline: none;
@@ -173,8 +173,8 @@ body {
 }
 
 .corner-icon-emoji {
-  font-size: 26px;
-  line-height: 30px;
+  font-size: 37px;
+  line-height: 44px;
   text-align: center;
 }
 
