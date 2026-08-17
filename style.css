@@ -67,7 +67,7 @@ body {
 
 @media (max-width: 600px) {
   .bg-photo {
-    background-size: 135vmax 200vmax;
+    background-size: 80vmax 120vmax;
   }
 }
 
