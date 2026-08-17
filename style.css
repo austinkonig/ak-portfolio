@@ -7,12 +7,15 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
+  overflow: hidden;
   background: #ddd;
 }
 
 .page {
   position: relative;
-  min-height: 100vh;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,26 +67,28 @@ body {
 
 .cutout-title {
   margin: 0;
-  padding: 2.25rem 1rem 1rem;
+  padding: clamp(1rem, 6vh, 2.25rem) 1rem clamp(0.5rem, 2.5vh, 1rem);
   font-family: "Times New Roman", Times, serif;
   font-weight: 400;
-  font-size: clamp(1.75rem, 4.4vw, 2.5rem);
+  font-size: clamp(1.5rem, min(4.4vw, 6.5vh), 2.5rem);
   color: #fff;
   text-align: center;
   user-select: none;
   -webkit-user-select: none;
   pointer-events: none;
+  flex: 0 0 auto;
 }
 
 .highlights {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  flex: 1 1 auto;
   display: flex;
   flex-direction: column;
-  gap: 0.9rem;
+  justify-content: center;
+  gap: clamp(0.3rem, 1.6vh, 0.9rem);
   width: min(94vw, 580px);
+  max-height: 100%;
+  overflow: hidden;
   font-family: "Times New Roman", Times, serif;
 }
 
@@ -93,7 +98,7 @@ body {
   align-items: center;
   justify-content: space-between;
   gap: 0.4rem 1rem;
-  padding: 0.9rem 1.2rem;
+  padding: clamp(0.35rem, 1.6vh, 0.9rem) 1.2rem;
 }
 
 .exp-left {
@@ -102,14 +107,14 @@ body {
 }
 
 .exp-role {
-  font-size: clamp(1.15rem, 1.35rem + 0.55vw, 1.45rem);
+  font-size: clamp(1rem, min(1.35rem + 0.55vw, 3.4vh), 1.45rem);
   color: #fff;
   mix-blend-mode: difference;
 }
 
 .exp-org {
   display: block;
-  font-size: clamp(1rem, 1.15rem + 0.4vw, 1.2rem);
+  font-size: clamp(0.9rem, min(1.15rem + 0.4vw, 2.8vh), 1.2rem);
   color: #fff;
   margin-top: 0.15rem;
   mix-blend-mode: difference;
@@ -124,7 +129,7 @@ body {
 }
 
 .exp-dates {
-  font-size: clamp(1rem, 1.15rem + 0.4vw, 1.2rem);
+  font-size: clamp(0.9rem, min(1.15rem + 0.4vw, 2.8vh), 1.2rem);
   color: #fff;
   white-space: nowrap;
   mix-blend-mode: difference;
@@ -132,8 +137,8 @@ body {
 
 .corner-icon {
   position: absolute;
-  width: 44px;
-  height: 44px;
+  width: clamp(32px, 5.5vh, 44px);
+  height: clamp(32px, 5.5vh, 44px);
   color: #333;
   border: none;
   outline: none;
@@ -153,28 +158,28 @@ body {
 
 
 .corner-top-left {
-  top: 1.5rem;
-  left: 1.5rem;
+  top: clamp(0.75rem, 3vh, 1.5rem);
+  left: clamp(0.75rem, 3vw, 1.5rem);
 }
 
 .corner-top-right {
-  top: 1.5rem;
-  right: 1.5rem;
+  top: clamp(0.75rem, 3vh, 1.5rem);
+  right: clamp(0.75rem, 3vw, 1.5rem);
 }
 
 .corner-bottom-left {
-  bottom: 1.5rem;
-  left: 1.5rem;
+  bottom: clamp(0.75rem, 3vh, 1.5rem);
+  left: clamp(0.75rem, 3vw, 1.5rem);
 }
 
 .corner-bottom-right {
-  bottom: 1.5rem;
-  right: 1.5rem;
+  bottom: clamp(0.75rem, 3vh, 1.5rem);
+  right: clamp(0.75rem, 3vw, 1.5rem);
 }
 
 .corner-icon-emoji {
-  font-size: 37px;
-  line-height: 44px;
+  font-size: clamp(26px, 4.6vh, 37px);
+  line-height: clamp(32px, 5.5vh, 44px);
   text-align: center;
 }
 
