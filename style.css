@@ -65,6 +65,12 @@ body {
   z-index: 0;
 }
 
+@media (max-width: 600px) {
+  .bg-photo {
+    background-size: 135vmax 200vmax;
+  }
+}
+
 .cutout-title {
   margin: 0;
   padding: clamp(1rem, 6vh, 2.25rem) 1rem clamp(0.5rem, 2.5vh, 1rem);
